@@ -1,5 +1,6 @@
 	
-  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+说明:该文件主要用于觉太187服务器web首页 semi 字符 闪烁变色  
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>
 		function random_color(){
 			var r = parseInt(Math.random()*257).toString(16);
@@ -12,9 +13,11 @@
 		}
 
 		$(function(){
-			var arrPre = $("pre").toArray();
-			var arrDiv = $("div").toArray();
+			var arrPre 		= $("pre").toArray();
+			var arrDiv 		= $("div").toArray();
 			var t;
+			var origin 		= 3000;
+			var frequency 	= 600;
 
 			$(arrDiv).each(function(){
 				$(this).css("color",random_color());
@@ -35,7 +38,7 @@
 						$(this).css("color",random_color());
 					});
 					$("pre").css("position","fixed");
-				},600);				
-			},3000);
+				},frequency);				
+			},origin);
 		});
 	</script>
