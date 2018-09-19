@@ -1,5 +1,5 @@
 //==================================
-// semi简化版js库 (后期建议放到semi框架中) 主要分为 get/set[css]cre add....
+// semi简化版jquery库 (后期建议放到semi框架中) 主要分为 get/set[css]cre add....
 // 2015-03-14
 // semi
 // alert('already!!');
